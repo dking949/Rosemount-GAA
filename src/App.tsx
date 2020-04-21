@@ -5,6 +5,8 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Navbar from './components/NavBar';
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
+import NewsPage from './pages/NewsPage';
+import GalleryPage from './pages/GalleryPage';
 
 function App() {
   return (
@@ -14,7 +16,9 @@ function App() {
         <Switch>
           <Route path="/" exact component={HomePage}/>
           <Route path="/about" exact component={AboutPage}/>
-          <Route path="/" render={() => <div>404</div>} />
+          <Route path="/news" exact component={NewsPage}/>
+          <Route path="/gallery" exact component={GalleryPage}/>
+          <Route path="/" render={() => <div>404</div>}/>
         </Switch>
       </BrowserRouter>
     </div>

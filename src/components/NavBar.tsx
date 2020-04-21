@@ -27,9 +27,13 @@ export default class Navbar extends Component {
           <MDBNavItem>
             <MDBNavLink to="/gallery">Gallery</MDBNavLink>
           </MDBNavItem>
+          <MDBNavItem>
+            <MDBNavLink to="/news">News</MDBNavLink>
+          </MDBNavItem>
         </MDBNavbarNav>
         <MDBNavbarNav right>
-        <MDBNavLink to="/gallery">todo Crest Here</MDBNavLink>
+        <MDBNavItem> <img src="https://rosemountgaaimages.s3-ap-southeast-2.amazonaws.com/crest.png"
+          alt="club crest"/></MDBNavItem>
         </MDBNavbarNav>
       </MDBNavbar>
       );
