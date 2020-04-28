@@ -18,7 +18,7 @@ export default class Navbar extends Component {
           <strong>Rosemount GAA</strong>
         </MDBNavbarBrand>
         <MDBNavbarNav left>
-          <MDBNavItem active>
+          <MDBNavItem>
             <MDBNavLink to="/">Home</MDBNavLink>
           </MDBNavItem>
           <MDBNavItem>
