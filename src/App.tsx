@@ -7,6 +7,7 @@ import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import NewsPage from './pages/NewsPage';
 import GalleryPage from './pages/GalleryPage';
+import LoginPage from './pages/LoginPage';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/about" exact component={AboutPage}/>
           <Route path="/news" exact component={NewsPage}/>
           <Route path="/gallery" exact component={GalleryPage}/>
+          <Route path="/login" exact component={LoginPage}/>
           <Route path="/" render={() => <div>404</div>}/>
         </Switch>
       </BrowserRouter>
