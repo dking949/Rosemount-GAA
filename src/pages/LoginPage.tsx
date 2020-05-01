@@ -1,19 +1,25 @@
 import React, { useState } from "react";
 import { MDBContainer, MDBRow, MDBCol, MDBInput, MDBBtn } from 'mdbreact';
+import { Auth } from "aws-amplify";
 
 export default function LoginPage() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
   function validateForm() {
-      console.log("form validated");
       return email.length > 0 && password.length > 0;
   }
 
-  function handleSubmit(event: any) {
-      console.log("email: " + email);
-      console.log("password: " + password);
-      event.preventDefault();
+  async function handleSubmit(event: any) {
+    event.preventDefault();
+  
+    console.log(email + "\n" + password);
+    try {
+      await Auth.signIn(email, password);
+      alert("Logged in");
+    } catch (e) {
+      alert(e.message);
+    }
   }
 
   return (
