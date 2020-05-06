@@ -1,6 +1,6 @@
 import React, { Component } from "react"
 import Gallery from "react-photo-gallery";
-import images from "../data/galleryImages";
+import images from "../data/GalleryImages";
 
 export default class GalleryPage extends Component {
 
