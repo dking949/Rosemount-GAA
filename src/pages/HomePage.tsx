@@ -1,23 +1,20 @@
 import React, { Component } from "react"
+import Carousel from "../components/Carousel";
+import TwitterTimeline from "../components/TwitterTimeline";
 
 export default class HomePage extends Component {
-
-    componentDidMount() {
-        const script = document.createElement("script");
-
-        script.src = "https://platform.twitter.com/widgets.js";
-        script.async = true;
-
-        document.body.appendChild(script);
-    }
     
     public render() { 
         return(
-            
-            <div>
-               <a className="twitter-timeline" data-width="300" data-height="400" data-theme="dark"
-               href="https://twitter.com/rosemountgaa?ref_src=twsrc%5Etfw">Tweets by rosemountgaa</a>
-            </div>
+            <div className="flex-container">
+                <div>
+                    <TwitterTimeline href={'https://twitter.com/rosemountgaa?ref_src=twsrc%5Etfw'}
+                        message={"Tweets by rosemountgaa"} />
+                </div>
+                <div>
+                    <Carousel/>
+                </div>
+            </div>          
         );
     }
 }

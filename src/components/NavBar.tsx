@@ -32,8 +32,11 @@ export default class Navbar extends Component {
           </MDBNavItem>
         </MDBNavbarNav>
         <MDBNavbarNav right>
-        <MDBNavItem> <img src="https://rosemountgaaimages.s3-ap-southeast-2.amazonaws.com/crest.png"
-          alt="club crest"/></MDBNavItem>
+        <MDBNavItem>
+            <img className="navbar-logo"
+            src="https://rosemountgaaimages.s3-ap-southeast-2.amazonaws.com/crest.png"
+            alt="club crest"/>
+        </MDBNavItem>
         </MDBNavbarNav>
       </MDBNavbar>
       );

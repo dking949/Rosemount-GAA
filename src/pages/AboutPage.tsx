@@ -1,14 +1,9 @@
 import React, { Component }  from "react";
-import {  MDBRow, MDBCol, MDBCard, MDBCardBody, MDBMask, MDBView, MDBBtn } from "mdbreact";
+import {  MDBRow, MDBCol, MDBCard, MDBCardBody, MDBMask, MDBView } from "mdbreact";
 import { birth, championshipSuccess, park } from "../data/about.json";
 
 
 export default class AboutPage extends Component {
-
-  // constructor(props: string) {
-  //   super(props);
-  //   //TODO
-  // }
     
     public render() {
         return (
@@ -34,9 +29,6 @@ export default class AboutPage extends Component {
                 <p>
                   { birth }
                 </p>
-                <MDBBtn color="success" className="waves-light ">
-                  Read more
-                </MDBBtn>
               </MDBCol>
             </MDBRow>
             <hr className="my-5" />
@@ -48,12 +40,6 @@ export default class AboutPage extends Component {
                 <p>
                   { championshipSuccess }
                 </p>
-                <MDBBtn
-                  color="pink"
-                  className="mb-lg-0 mb-4 waves-light"
-                >
-                  Read more
-                </MDBBtn>
               </MDBCol>
               <MDBCol lg="5">
                 <MDBView className="rounded z-depth-2 mb-lg-0 mb-4" hover waves>
@@ -89,9 +75,6 @@ export default class AboutPage extends Component {
                 <p>
                   { park }
                 </p>
-                <MDBBtn color="indigo" className="waves-light ">
-                  Read more
-                </MDBBtn>
               </MDBCol>
             </MDBRow>
           </MDBCardBody>
