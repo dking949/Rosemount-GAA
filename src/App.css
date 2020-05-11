@@ -2,48 +2,45 @@
   text-align: center;
 }
 
-.flex-container {
-  display: flex;
-  flex-flow: row wrap;
-  padding: 30px;
-  margin: 30px;
-}
-
 .navbar-logo {
   max-height: 80px;
   max-width: 80px;
-}
-
-body, html {
-  height: 100%;
 }
 
 .parallax {
   /* The image used */
   background-image: url("https://rosemountgaaimages.s3-ap-southeast-2.amazonaws.com/sideline.jpg");
 
-  /* Full height */
-  height: 100vh;
-
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+  height: 100vh;
 }
 
 .home-page-heading {
   color: #ffc400;
-  max-height: 300px;
-  align-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+}
+
+.flex-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .flex-item1 {
-  padding: 20px;
-  max-width: 30%;;
+  max-width: 30%;
+  overflow: auto;
 }
 
 .flex-item2 {
   max-width: 70%;
-  padding: 20px;
 }

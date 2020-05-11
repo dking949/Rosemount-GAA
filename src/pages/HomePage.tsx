@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 import Carousel from "../components/Carousel";
 import TwitterTimeline from "../components/TwitterTimeline";
-import { MDBContainer, MDBRow } from "mdbreact";
+import { MDBContainer } from "mdbreact";
 
 export default class HomePage extends Component {
     
@@ -9,9 +9,7 @@ export default class HomePage extends Component {
         return(
             <div className="parallax">
                 <MDBContainer className="home-page-heading">
-                    <MDBRow>
-                        <h1>Rosemount GAA Club</h1>
-                    </MDBRow>
+                    <h1>Rosemount GAA Club</h1>
                 </MDBContainer>
                 <MDBContainer className="flex-container">
                 <TwitterTimeline

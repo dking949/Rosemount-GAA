@@ -8,7 +8,7 @@ import AboutPage from './pages/AboutPage';
 import NewsPage from './pages/NewsPage';
 import GalleryPage from './pages/GalleryPage';
 import LoginPage from './pages/LoginPage';
-import Footer from './components/Footer';
+//import Footer from './components/Footer';
 
 function App() {
   return (
@@ -23,7 +23,6 @@ function App() {
           <Route path="/login" exact component={LoginPage}/>
           <Route path="/" render={() => <div>404</div>}/>
         </Switch>
-        <Footer/>
       </BrowserRouter>
     </div>
   );
