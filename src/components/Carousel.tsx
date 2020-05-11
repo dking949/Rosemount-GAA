@@ -6,7 +6,7 @@ export default class CarouselPage extends Component {
   
   render() {
     return (
-        <MDBContainer>
+        <MDBContainer className="flex-item2">
           <MDBCarousel
             activeItem={1}
             length={3}

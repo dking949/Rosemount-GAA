@@ -25,6 +25,24 @@ const images: GalleryImage[] = [
         src: "https://rosemountgaaimages.s3-ap-southeast-2.amazonaws.com/test2.jpg",
         width: 800,
         height: 772
+    },
+    {
+        src: "https://rosemountgaaimages.s3-ap-southeast-2.amazonaws.com/team.jpg",
+        width: 2099,
+        height: 1499
+    },
+    {
+        src: "https://rosemountgaaimages.s3-ap-southeast-2.amazonaws.com/iz.jpg",
+        width: 400,
+        height: 400
+    },{
+        src: "https://rosemountgaaimages.s3-ap-southeast-2.amazonaws.com/junior.jpg",
+        width: 1000,
+        height: 667
+    },{
+        src: "https://rosemountgaaimages.s3-ap-southeast-2.amazonaws.com/keane.jpg",
+        width: 752,
+        height: 501
     }
 ]
 
