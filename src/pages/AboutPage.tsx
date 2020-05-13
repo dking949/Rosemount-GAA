@@ -7,7 +7,7 @@ export default class AboutPage extends Component {
     
     public render() {
         return (
-        <MDBCard className="my-5 px-5 pb-5">
+        <MDBCard className="px-5 pb-5">
           <MDBCardBody>
             <MDBRow>
               <MDBCol lg="5">
@@ -31,7 +31,7 @@ export default class AboutPage extends Component {
                 </p>
               </MDBCol>
             </MDBRow>
-            <hr className="my-5" />
+            <hr/>
             <MDBRow>
               <MDBCol lg="7">
                 <h3 className="font-weight-bold mb-3 p-0">
@@ -54,7 +54,7 @@ export default class AboutPage extends Component {
                 </MDBView>
               </MDBCol>
             </MDBRow>
-            <hr className="my-5" />
+            <hr/>
             <MDBRow>
               <MDBCol lg="5">
                 <MDBView className="rounded z-depth-2 mb-lg-0 mb-4" hover waves>
@@ -70,7 +70,7 @@ export default class AboutPage extends Component {
               </MDBCol>
               <MDBCol lg="7">
                 <h3 className="font-weight-bold mb-3 p-0">
-                  <strong>FR. O’Growney Park</strong>
+                  <strong>Fr O’Growney Park</strong>
                 </h3>
                 <p>
                   { park }
