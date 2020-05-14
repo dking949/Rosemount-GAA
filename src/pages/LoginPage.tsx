@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { MDBContainer, MDBRow, MDBCol, MDBInput, MDBBtn } from 'mdbreact';
-import { Auth } from "aws-amplify";
+//import { Auth } from "aws-amplify";
 
 export default function LoginPage() {
   const [email, setEmail] = useState("");
@@ -15,7 +15,7 @@ export default function LoginPage() {
   
     console.log(email + "\n" + password);
     try {
-      await Auth.signIn(email, password);
+      //await Auth.signIn(email, password);
       alert("Logged in");
     } catch (e) {
       alert(e.message);

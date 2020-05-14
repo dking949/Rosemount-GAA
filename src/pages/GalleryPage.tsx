@@ -1,19 +1,45 @@
 import React, { Component } from "react";
 import Gallery from "react-photo-gallery";
 import images from "../data/GalleryImages";
-import Modal from "../components/Modal";
-import { MDBContainer } from "mdbreact";
-import ReactDOM from "react-dom";
+import { MDBContainer, MDBBtn, MDBModal, MDBModalBody, MDBModalFooter } from "mdbreact";
 
-export default class GalleryPage extends Component {
+interface MyProps {}
+  
+interface MyState {
+    imgUrl: string,
+    modalOpen: boolean
+}
 
-    private photoClicked(event: any, obj: any): void {
+export default class GalleryPage extends Component<MyProps, MyState> {
+
+    constructor(props: any) {
+        super(props);
+        this.state = {
+            imgUrl: "",         //url should be empty on initialization
+            modalOpen: false    //should be closed on initialization
+        }
+
+        this.photoClicked = this.photoClicked.bind(this);
+        this.toggleOpenState = this.toggleOpenState.bind(this);
+    }
+
+    private async photoClicked(event: any, obj: any) {
         const index: number = obj.index;
         const src1: string = images[index].src
-        console.log("event: ", event);
-        console.log("index: ", index);
-        console.log("src: ", src1);
-        ReactDOM.render(<Modal src={src1} open={true}/>, document.getElementById("modal-container"));
+
+        //Open the dialog
+        await this.toggleOpenState();
+        //change the image url
+        this.setState({
+            imgUrl: src1
+        });
+    }
+
+    //setState is not synchronous so muct use 'async'
+    private async toggleOpenState() {
+        this.setState({
+            modalOpen: !this.state.modalOpen
+        });
     }
     
     public render() {
@@ -21,7 +47,16 @@ export default class GalleryPage extends Component {
         <MDBContainer>
             <Gallery photos={images}
             onClick={this.photoClicked}/>
-            <div id="modal-container"/>
+            
+            {/* The Dialog*/}
+            <MDBModal isOpen={this.state.modalOpen} size="lg" className="gallery-modal">
+                <MDBModalBody>
+                    <img src={this.state.imgUrl} alt="TODO" className="test"/>
+                </MDBModalBody>
+                <MDBModalFooter>
+                <MDBBtn color="secondary" onClick={this.toggleOpenState}>Close</MDBBtn>
+                </MDBModalFooter>
+            </MDBModal>
         </MDBContainer>
         );
     }

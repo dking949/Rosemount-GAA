@@ -1,5 +1,4 @@
 import React, { Component } from "react"
-import Carousel from "../components/Carousel";
 import TwitterTimeline from "../components/TwitterTimeline";
 import { MDBContainer } from "mdbreact";
 
