@@ -28,7 +28,7 @@ export default class GalleryPage extends Component<MyProps, MyState> {
         const src1: string = images[index].src
 
         //Open the dialog
-        await this.toggleOpenState();
+        this.toggleOpenState();
         //change the image url
         this.setState({
             imgUrl: src1
@@ -36,7 +36,7 @@ export default class GalleryPage extends Component<MyProps, MyState> {
     }
 
     //setState is not synchronous so muct use 'async'
-    private async toggleOpenState() {
+    private toggleOpenState() {
         this.setState({
             modalOpen: !this.state.modalOpen
         });
@@ -51,7 +51,7 @@ export default class GalleryPage extends Component<MyProps, MyState> {
             {/* The Dialog*/}
             <MDBModal isOpen={this.state.modalOpen} size="lg" className="gallery-modal">
                 <MDBModalBody>
-                    <img src={this.state.imgUrl} alt="TODO" className="test"/>
+                    <img src={this.state.imgUrl} alt="TODO" className="gallery-modal-img"/>
                 </MDBModalBody>
                 <MDBModalFooter>
                 <MDBBtn color="secondary" onClick={this.toggleOpenState}>Close</MDBBtn>

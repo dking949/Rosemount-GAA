@@ -32,17 +32,22 @@
 .flex-container {
   display: flex;
   flex-flow: row wrap;
-  justify-content: center;
   align-items: center;
+
+  background-color: #1c2331;
+  height: 100vh;
 }
 
 .flex-item1 {
-  max-width: 30%;
-  overflow: auto;
+  max-width: 50%;
+  margin: auto;
 }
 
 .flex-item2 {
-  max-width: 70%;
+  max-width: 50%;
+  width: 50vw;
+  height: 50vh;
+  margin: auto;
 }
 
 
@@ -52,23 +57,9 @@
   max-width: 90%;
 }
 
-.test {
+.gallery-modal-img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 90%;
 }
-
-.map-container-2{
-  overflow:hidden;
-  padding-bottom:56.25%;
-  position:relative;
-  height:0;
-  }
-.map-container-2 iframe{
-  left:0;
-  top:0;
-  height:100%;
-  width:100%;
-  position:absolute;
-  }

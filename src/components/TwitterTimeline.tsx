@@ -1,6 +1,4 @@
 import React, { Component } from "react";
-import { MDBContainer } from "mdbreact";
-
 
 export default class TwitterTimeline extends Component<TwitterProps>{
 
@@ -15,14 +13,13 @@ export default class TwitterTimeline extends Component<TwitterProps>{
 
     public render() {
         return(
-            <MDBContainer className="flex-item1">
+            <div className="flex-item1">
                 <a className="twitter-timeline"
-                    data-theme="dark"
                     data-height="450"
                     data-width="400"
                     href={this.props.href}>{this.props.message}
                 </a>
-            </MDBContainer>);
+            </div>);
             
     }
 }
