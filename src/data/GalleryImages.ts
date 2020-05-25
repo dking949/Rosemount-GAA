@@ -1,6 +1,6 @@
 import GalleryImage from "../interfaces/GalleryImage"
 
-const images: GalleryImage[] = [
+const photos: GalleryImage[] = [
     {
         src: "https://rosemountgaaimages.s3-ap-southeast-2.amazonaws.com/boidu%2BEoin.jpg",
         width: 800,
@@ -46,4 +46,4 @@ const images: GalleryImage[] = [
     }
 ]
 
-export default images;
+export default photos;

@@ -1,6 +1,6 @@
 import React, { Component } from "react"
 import TwitterTimeline from "../components/TwitterTimeline";
-import GoogleMapComponent from "../components/GoogleMapComponent";
+import GoogleMap from "../components/GoogleMap";
 
 export default class HomePage extends Component {
     
@@ -13,13 +13,13 @@ export default class HomePage extends Component {
                     </div>
                 </div>
                 <div className="flex-container">
-                <TwitterTimeline
-                    href={'https://twitter.com/rosemountgaa?ref_src=twsrc%5Etfw'}
-                    message={"Tweets by rosemountgaa"}
-                />
-                <GoogleMapComponent/>
+                  <TwitterTimeline
+                      href={'https://twitter.com/rosemountgaa?ref_src=twsrc%5Etfw'}
+                      message={"Tweets by rosemountgaa"}
+                  />
+                  <GoogleMap/>
                 </div>
-            </div>      
+            </div> 
         );
     }
 }

@@ -45,21 +45,14 @@
 
 .flex-item2 {
   max-width: 50%;
-  width: 50vw;
-  height: 50vh;
   margin: auto;
+  border-radius: 10px;
 }
 
-
-.gallery-modal {
-  overflow-x: auto;
-  overflow-y: auto;
-  max-width: 90%;
-}
-
-.gallery-modal-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 90%;
+.map-iframe {
+  border: 0;
+  border-radius: 5px;
+  width: 600px;
+  height: 450px;
+  max-width: 100%
 }
