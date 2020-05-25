@@ -3,12 +3,12 @@
 This SPA is a personel project to redesign the webpage for Rosemount Gaa Club, Westmeath.
 It is a simple static web app with a Home Page, About Page, Gallery Page and a News Page.
 
-[Click here for live demo] (https://d3vxxerqplgiyg.cloudfront.net) 
+[Click here for live demo](https://d3vxxerqplgiyg.cloudfront.net) 
 
 The project is written in Typescript and was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). The app also makes use of of the MDBReact UI Library for some of its styling and components.
 I have also embedded Twitter timeline and Google map widgets.
 
-All Images used in app are hosted in an Amazon S3 Bucket. The website itself is also hosted in an S3 bucket and has a Cloudfront distribution setup for it [here] (https://d3vxxerqplgiyg.cloudfront.net).
+All Images used in app are hosted in an Amazon S3 Bucket. The website itself is also hosted in an S3 bucket and has a Cloudfront distribution setup.
 
 ## Available Scripts
 
