@@ -14,10 +14,10 @@ export default class Footer extends Component{
                   </h6>
                 </MDBCol>
                 <MDBCol md="6" lg="7" className="text-center text-md-right">
-                  <a className="fb-ic ml-0" href="https://www.facebook.com/Rosemount-GAA-248172435935592/">
+                  <a className="footer-social-media-icons" href="https://www.facebook.com/Rosemount-GAA-248172435935592/">
                     <i className="fab fa-facebook-f white-text mr-lg-4"> </i>
                   </a>
-                  <a className="tw-ic" href="https://twitter.com/rosemountgaa">
+                  <a className="footer-social-media-icons" href="https://twitter.com/rosemountgaa">
                     <i className="fab fa-twitter white-text mr-lg-4"> </i>
                   </a>
                 </MDBCol>

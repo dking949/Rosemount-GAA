@@ -33,6 +33,18 @@ export default class AboutPage extends Component {
             </MDBRow>
             <hr/>
             <MDBRow>
+            <MDBCol lg="5">
+                <MDBView className="rounded z-depth-2 mb-lg-0 mb-4" hover waves>
+                  <img
+                    className="img-fluid"
+                    src="https://rosemountgaaimages.s3-ap-southeast-2.amazonaws.com/junior.jpg"
+                    alt="Junior Champions 2007"
+                  />
+                  <a href="#!">
+                    <MDBMask overlay="white-slight" />
+                  </a>
+                </MDBView>
+              </MDBCol>
               <MDBCol lg="7">
                 <h3 className="font-weight-bold mb-3 p-0">
                   <strong>Championship Success</strong>
@@ -48,18 +60,6 @@ export default class AboutPage extends Component {
                   <li>Intermediate Champions: {rollOfHonour.intermediate}</li>
                   <li>Junior Champions: {rollOfHonour.junior}</li>
                 </ul>
-              </MDBCol>
-              <MDBCol lg="5">
-                <MDBView className="rounded z-depth-2 mb-lg-0 mb-4" hover waves>
-                  <img
-                    className="img-fluid"
-                    src="https://rosemountgaaimages.s3-ap-southeast-2.amazonaws.com/junior.jpg"
-                    alt="Junior Champions 2007"
-                  />
-                  <a href="#!">
-                    <MDBMask overlay="white-slight" />
-                  </a>
-                </MDBView>
               </MDBCol>
             </MDBRow>
             <hr/>
