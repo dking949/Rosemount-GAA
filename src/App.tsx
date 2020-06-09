@@ -17,7 +17,7 @@ function App() {
         <Switch>
           <Route path="/" exact component={HomePage}/>
           <Route path="/about" exact component={AboutPage}/>
-          <Route path="/news" exact component={NewsPage}/>
+          {/*<Route path="/news" exact component={NewsPage}/>*/}
           <Route path="/gallery" exact component={GalleryPage}/>
           <Route path="/" render={() => <div>404</div>}/>
         </Switch>

@@ -27,9 +27,9 @@ export default class Navbar extends Component {
           <MDBNavItem>
             <MDBNavLink to="/gallery">Gallery</MDBNavLink>
           </MDBNavItem>
-          <MDBNavItem>
+          {/*<MDBNavItem>
             <MDBNavLink to="/news">News</MDBNavLink>
-          </MDBNavItem>
+          </MDBNavItem>*/}
         </MDBNavbarNav>
         <MDBNavbarNav right>
         <MDBNavItem>
