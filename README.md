@@ -1,7 +1,7 @@
 ## Rosemount GAA Web App
 
 This SPA is a personel project to redesign the webpage for Rosemount Gaa Club, Westmeath.
-It is a simple static web app with a Home Page, About Page, Gallery Page and a News Page.
+It is a simple static web app with a Home Page, About Page and a Gallery Page.
 
 [Click here for live demo](https://d3vxxerqplgiyg.cloudfront.net) 
 
